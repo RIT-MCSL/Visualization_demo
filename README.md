@@ -109,13 +109,14 @@ The Stage tab allows users to:
 
 ## Graph Tab — 2D Latent Space
 
-![2D Graph](assets/graph_tab_2d.png)
+![2D Graph](assets/grad_tab.png)
 
 Interactive latent-space visualization with:
 
 - Scatter plot exploration
 - Input image preview
-- Prediction overlays
+- Output image preview for image generation tasks
+- Prediction overlays for segmentation tasks
 - Ground-truth comparison
 - Grad-CAM visualization
 
