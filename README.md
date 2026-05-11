@@ -109,7 +109,7 @@ The Stage tab allows users to:
 
 ## Graph Tab — 2D Latent Space
 
-![2D Graph](assets/grad_tab.png)
+![2D Graph](assets/grad_cam.png)
 
 Interactive latent-space visualization with:
 
