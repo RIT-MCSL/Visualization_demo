@@ -146,7 +146,7 @@ Provides:
 
 ## Feature Maps Tab
 
-![Feature Maps](assets/feature_maps.png)
+![Feature Maps](assets/Feature_maps.png)
 
 Supports:
 - Channel-wise activation visualization
