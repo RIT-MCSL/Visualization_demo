@@ -35,17 +35,25 @@ The long-term goal of the project is to provide a modular and extensible visuali
 
 ### Modular and Extendible GUI Framework
 
-![Architecture](assets/sample_gui.png)
+![GUI](assets/sample_gui.png)
 
 The GUI is built as a PyQt6-based multi-tab desktop interface designed to support interactive exploration and visualization of deep learning models and their learned representations. The framework already includes several visualization, interactivity, and file-loading capabilities, allowing users to load trained neural-network checkpoints, inspect model outputs, visualize feature activations, explore latent spaces, and interact with visualizations through an intuitive graphical environment. The modular and extensible software architecture enables easy integration of additional visualization modules, model interfaces, explainability tools, and domain-specific analysis features, supporting future expansion toward broader imaging, computer vision, and neural-science-related applications.
 
 ### Multiple Deep Learning Integration Pipelines
-Supports integration with:
-- Segmentation networks
-- CNN feature extractors
-- Conditional Variational Autoencoders (CVAE)
-- U-Net image generators
-- Custom PyTorch architectures
+
+The visualization tool is designed to support integration with multiple deep learning model architectures for interpretable AI exploration and analysis. The current implementation supports segmentation networks and UNet based autoencoder models developed for material appearance analysis and over-exposure correction applications. However, the same visualization and interpretability features can be applied to other tasks trained using similar architectures. The framework also provides an extensible mechanism for integrating additional CNN-based models by allowing users to supply their own model architectures, enabling broader adaptability across research applications. Future development plans include support for more advanced architectures such as Transformers, attention-based networks, and diffusion models.
+
+#### Built-in Model Types
+
+| Model Type | Purpose |
+|---|---|
+| `image_generation_unet` | U-Net style image generation |
+| `segmentation_FCNResNet101` | Semantic segmentation |
+| `segmentation_CVAE` | Material segmentation with CVAE |
+
+![Semantic segmentation](assets/segmentation_FCNResNet101.png)
+
+---
 
 ### Dimensionality Reduction
 Built-in support for:
@@ -179,15 +187,7 @@ Latent interpolation allows:
 
 ---
 
-# Built-in Model Types
 
-| Model Type | Purpose |
-|---|---|
-| `image_generation_unet` | U-Net style image generation |
-| `segmentation_FCNResNet101` | Semantic segmentation |
-| `segmentation_CVAE` | Material segmentation with CVAE |
-
----
 
 # Repository Structure
 
