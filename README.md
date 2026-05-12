@@ -177,13 +177,15 @@ Provides:
 
 ## Feature Maps Tab
 
-![Feature Maps](assets/Feature_maps.png)
+![Feature Maps](assets/material_feature.png)
 
 Supports:
 - Channel-wise activation visualization
 - Feature-map inspection
 - Interactive thumbnail exploration
 - Layer interpretability analysis
+
+![Feature Maps](assets/Feature_maps.png)
 
 ---
 
