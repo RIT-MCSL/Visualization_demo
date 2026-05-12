@@ -28,15 +28,16 @@ The framework is currently being developed and applied for research and educatio
 - Ongoing work for time-series EEG analysis and other neural-science-related deep learning applications
 
 The long-term goal of the project is to provide a modular and extensible visualization framework that supports interdisciplinary research and teaching across color science, imaging science, neural science, and interpretable AI applications.
+
 ---
 
 ## Key Features
 
 ### Modular and Extendible GUI Framework
-- PyQt6-based multi-tab desktop interface
-- Easily extensible architecture
-- Dynamic model loading
-- Plug-and-play visualization modules
+
+![Architecture](assets/sample_gui.png)
+
+The GUI is built as a PyQt6-based multi-tab desktop interface designed to support interactive exploration and visualization of deep learning models and their learned representations. The framework already includes several visualization, interactivity, and file-loading capabilities, allowing users to load trained neural-network checkpoints, inspect model outputs, visualize feature activations, explore latent spaces, and interact with visualizations through an intuitive graphical environment. The modular and extensible software architecture enables easy integration of additional visualization modules, model interfaces, explainability tools, and domain-specific analysis features, supporting future expansion toward broader imaging, computer vision, and neural-science-related applications.
 
 ### Multiple Deep Learning Integration Pipelines
 Supports integration with:
