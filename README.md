@@ -1,34 +1,33 @@
 
-# Latent Space Visualizer
+# Interactive DeepLearning Exploration tool
 
-Interactive desktop visualization framework for exploring neural-network latent spaces, feature activations, segmentation predictions, and interpretable AI workflows.
+The Interactive Deep Learning Exploration Tool is an interactive desktop visualization framework designed for exploring neural-network latent spaces, feature activations, predictions, and interpretable AI workflows. Developed initially for color science and imaging research and teaching applications, the platform aims to address the growing challenges of understanding complex deep learning models, reducing coding barriers, and improving AI interpretability in educational and research environments, with future expansion planned toward neural science related applications. The main goal of the project is to provide an intuitive, hands-on environment that enables students and researchers to visualize, analyze, and better understand how deep learning models process and represent complex data across multidisciplinary domains.
 
 ---
 
 ## Overview
 
-The **Latent Space Visualizer** is a PyQt6-based desktop application designed for interactive analysis of learned representations from PyTorch neural networks.
+The Interactive Deep Learning Exploration Tool is a PyQt6-based desktop application designed for interactive visualization and analysis of learned representations from PyTorch-based neural networks. The framework aims to improve the interpretability and accessibility of deep learning models by providing an intuitive graphical environment for exploring different features of AI workflows without requiring extensive coding experience.
 
-The framework enables researchers and developers to:
+The visualizer currently enables researchers, students, and developers to:
 
-- Load trained `.pth` checkpoints
-- Extract intermediate activations from selected layers
-- Perform dimensionality reduction (t-SNE, PCA, UMAP, TRIMAP, PaCMAP)
-- Visualize latent embeddings in 2D and 3D
-- Inspect Grad-CAM saliency maps
-- Explore feature-map activations channel-by-channel
-- Compare predictions, masks, and material categories
-- Perform latent-space interpolation between samples
+- Load trained neural-network models from `.pth` checkpoints
+- Extract and visualize intermediate activations from selected layers of CNN architectures
+- Explore feature-map activations channel-by-channel to better understand learned spatial representations
+- Perform dimensionality reduction on high-dimensional feature and latent spaces using methods such as PCA, t-SNE, and UMAP
+- Visualize latent embeddings interactively in both 2D and 3D spaces
+- Perform latent-space interpolation and traversal between samples to analyze learned feature continuity and representation behavior
+- Inspect Grad-CAM saliency maps for interpretable AI analysis, with ongoing development toward additional attention-modeling and explainability visualizations
+- Compare model outputs, predictions, and feature responses across different inputs and architectures
 
-The system was developed for research in:
+The framework is currently being developed and applied for research and educational applications in:
 
-- AI interpretability
-- Computer vision
-- Material appearance analysis
-- Segmentation analysis
-- Representation learning
-- HDR and color imaging workflows
+- Over-exposure correction and image generation workflows
+- Material segmentation, classification, and appearance analysis
+- Feature representation analysis for color science and imaging applications
+- Ongoing work for time-series EEG analysis and other neural-science-related deep learning applications
 
+The long-term goal of the project is to provide a modular and extensible visualization framework that supports interdisciplinary research and teaching across color science, imaging science, neural science, and interpretable AI applications.
 ---
 
 ## Key Features
