@@ -76,11 +76,10 @@ Built-in support for:
 - Layer-selection interface
 
 ### Dataset & Annotation Support
-- LabelMe annotations for Segmentation masks
+- LabelMe annotations
+- Segmentation masks
 - Multi-label material classes
 - Ground-truth overlays
-- input image and ground-truth image pairs for image generation applications
-- Future plan to include 3D data and time series data support
 
 ---
 
@@ -97,27 +96,6 @@ The visualization workflow consists of:
 5. Dimensionality reduction
 6. Interactive visualization
 7. Explainability analysis
-
----
-
-
-```text
-Load Model
-    ↓
-Select Dataset
-    ↓
-Choose Layer
-    ↓
-Extract Features
-    ↓
-Apply Dimensionality Reduction
-    ↓
-Generate 2D/3D Projection
-    ↓
-Visualize & Explore
-    ↓
-Run Grad-CAM / Feature Analysis
-```
 
 ---
 
@@ -213,6 +191,49 @@ Latent interpolation allows:
 
 
 
+# Repository Structure
+
+```text
+visualizer/
+├── main.py
+├── view_manager.py
+├── loading.py
+├── plot_widget.py
+├── material_plot_widget.py
+├── featuremap_widget.py
+├── gradcam_widget.py
+├── interpolation_widget.py
+├── models/
+│   ├── segmentation.py
+│   ├── best_model.py
+│   ├── Exponet.py
+│   └── Exponet512.py
+└── tests/
+```
+
+---
+
+# End-to-End Workflow
+
+```text
+Load Model
+    ↓
+Select Dataset
+    ↓
+Choose Layer
+    ↓
+Extract Features
+    ↓
+Apply Dimensionality Reduction
+    ↓
+Generate 2D/3D Projection
+    ↓
+Visualize & Explore
+    ↓
+Run Grad-CAM / Feature Analysis
+```
+
+---
 
 # Technologies
 
@@ -228,7 +249,30 @@ Latent interpolation allows:
 
 ---
 
+# Research Applications
 
+The framework is suitable for:
+
+- AI explainability research
+- Neural-network debugging
+- Material appearance analysis
+- Semantic segmentation analysis
+- Latent-space exploration
+- Representation-learning research
+- HDR and color imaging studies
+
+---
+
+# Example Research Outputs
+
+Related work includes:
+
+- Color-aware segmentation analysis
+- Deep-learning reconstruction of overexposed images
+- Material segmentation and latent representation analysis
+- Explainable visualization for neural networks
+
+---
 
 # Publications
 
@@ -254,7 +298,6 @@ Potential future additions include:
 - Vision transformer visualization
 - Multi-modal embedding analysis
 - Real-time inference support
-- 3D and time series data support
 - Web-based deployment
 - Multi-GPU feature extraction
 
