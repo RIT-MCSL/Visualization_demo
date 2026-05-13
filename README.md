@@ -60,6 +60,9 @@ The visualization tool is designed to support integration with multiple deep lea
 ---
 
 ### Dimensionality Reduction
+
+Dimensionality reduction techniques are methods used to transform high-dimensional feature or latent representations learned by deep learning models into lower-dimensional spaces, such as 2D or 3D, while preserving important structural relationships within the data. In our visualization tool, dimensionality reduction enables users to visually explore complex feature distributions, clustering behavior, and latent-space organization, making it easier to interpret how neural networks represent different samples, classes, and learned patterns that would otherwise be impossible to observe directly in high-dimensional space.
+
 Built-in support for:
 - t-SNE
 - PCA
@@ -68,22 +71,42 @@ Built-in support for:
 - PaCMAP
 
 ### Interactive Visualization
-- 2D and 3D latent-space visualization
-- Live parameter adjustment
-- Interactive scatter exploration
-- Sample-wise navigation
+
+Interactivity is a critical component of our visualization tool because it enables users to dynamically traverse through datasets, classes, model layers, and feature representations, select different visualization and interpretability methods, compare model outputs and activations, perform latent-space interpolations, and interactively explore complex neural-network behaviors in a more intuitive, transparent, and educational manner.
+
+#### Current Interactivity Features
+
+- Switching between 2D and 3D latent-space visualizations
+- Live parameter adjustment and visualization updates
+- Interactive scatter-plot exploration and sample selection
+- Sample-wise dataset navigation
+- Model layer-based navigation and feature inspection
+- Interactive feature-map and activation exploration
+- Comparative visualization of model outputs and representations
+
+More interactivity features will be added.
 
 ### Explainable AI Tools
-- Grad-CAM visualization
-- Feature-map exploration
-- Channel-level inspection
-- Layer-selection interface
+
+The framework intends to integrate several explainable AI and interpretability tools that help users better understand how neural networks process information, generate predictions, and learn internal feature representations.
+
+- Grad-CAM visualization for highlighting spatial regions contributing to model predictions
+- Feature-map exploration across intermediate network layers
+- Channel-level activation inspection for detailed representation analysis
+- Interactive visualization of learned feature responses and model behavior
+
+Additional explainability, attention-modeling, and interpretability tools are planned for future integration.
 
 ### Dataset & Annotation Support
-- LabelMe annotations
-- Segmentation masks
-- Multi-label material classes
-- Ground-truth overlays
+
+The framework includes support for loading, organizing, and visualizing datasets used in the supported deep learning models workflows, enabling easier integration between data preparation, model analysis, and interpretability tools.
+
+- Segmentation and classification datasets with LabelMe-based annotation support
+- Image generation, reconstruction, and image-enhancement datasets
+- Dataset browsing and sample-wise visualization capabilities
+- Integration with model prediction and feature-visualization workflows
+
+Future development plans include support for 3D data, video datasets, temporal analysis pipelines, and time-series data such as EEG and other neural-science-related signals.
 
 ---
 
@@ -226,19 +249,6 @@ Latent interpolation allows:
 
 ---
 
-# Research Applications
-
-The framework is suitable for:
-
-- AI explainability research
-- Neural-network debugging
-- Material appearance analysis
-- Semantic segmentation analysis
-- Latent-space exploration
-- Representation-learning research
-- HDR and color imaging studies
-
----
 
 # Example Research Outputs
 
@@ -276,17 +286,11 @@ Potential future additions include:
 - Multi-modal embedding analysis
 - Real-time inference support
 - Web-based deployment
-- Multi-GPU feature extraction
 
 ---
 
-# Citation
-
-If you use this framework in research, please cite the related publications and repository.
-
----
 
 # License
 
-Research and educational use.
+The project is planned to be released under an open-source license. The source code and related resources will be made publicly available once the licensing and institutional approval processes are finalized.
 
