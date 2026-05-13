@@ -51,7 +51,11 @@ The visualization tool is designed to support integration with multiple deep lea
 | `segmentation_FCNResNet101` | Semantic segmentation |
 | `segmentation_CVAE` | Material segmentation with CVAE |
 
+#### Semantic segmentation Model Architecture
 ![Semantic segmentation](assets/segmentation_FCNResNet101.png)
+
+#### U-Net style image generation Model Architecture
+![Semantic segmentation](assets/UNet.png)
 
 ---
 
@@ -97,7 +101,26 @@ The visualization workflow consists of:
 6. Interactive visualization
 7. Explainability analysis
 
+```text
+Load Model
+    ↓
+Select Dataset
+    ↓
+Choose Layer
+    ↓
+Extract Features
+    ↓
+Apply Dimensionality Reduction
+    ↓
+Generate 2D/3D Projection
+    ↓
+Visualize & Explore
+    ↓
+Run Grad-CAM / Feature Analysis
+```
+
 ---
+
 
 # User Interface
 
@@ -186,52 +209,6 @@ Latent interpolation allows:
 - Smooth transitions between samples
 - Latent manifold exploration
 - Decoder behavior analysis
-
----
-
-
-
-# Repository Structure
-
-```text
-visualizer/
-├── main.py
-├── view_manager.py
-├── loading.py
-├── plot_widget.py
-├── material_plot_widget.py
-├── featuremap_widget.py
-├── gradcam_widget.py
-├── interpolation_widget.py
-├── models/
-│   ├── segmentation.py
-│   ├── best_model.py
-│   ├── Exponet.py
-│   └── Exponet512.py
-└── tests/
-```
-
----
-
-# End-to-End Workflow
-
-```text
-Load Model
-    ↓
-Select Dataset
-    ↓
-Choose Layer
-    ↓
-Extract Features
-    ↓
-Apply Dimensionality Reduction
-    ↓
-Generate 2D/3D Projection
-    ↓
-Visualize & Explore
-    ↓
-Run Grad-CAM / Feature Analysis
-```
 
 ---
 
